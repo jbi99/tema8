@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 40px;
+}
+h1 {
+  margin-left: 30px;
+  font-size: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.box {
+  background: #7a7a7a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.box:hover {
+  background: #5a5a5a;
+  cursor: pointer;
+}
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.product_card {
+  display: block;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.product_card:hover {
+  transform: scale(1.02);
+}
+
+.product_card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product_card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.product_card .brand {
+  font-size: 13px;
+  color: #777;
+}
+
+.product_card .price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product_card .price.old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.product_card .price.new {
+  color: #d00;
+}
+
+.product_card .discount {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.product_card .sold {
+  background: #555;
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+}
+
+.product_card .readmore {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.product_card.soldout img {
+  opacity: 0.4;
+}
+.product_page {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product_image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product_info h2 {
+  margin-bottom: 10px;
+}
+
+.product_info p {
+  margin: 5px 0;
+}
+
+.product_buy {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product_buy h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product_buy label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product_buy select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.add_to_basket {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add_to_basket:hover {
+  background: #333;
+}
